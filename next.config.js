@@ -8,7 +8,6 @@ const nextConfig = {
   },
 
   basePath: process.env.NODE_ENV === 'production' ? '/projeto-arq-mel' : '',
-  assetPrefix: '/projeto-arq-mel',
 };
 
 module.exports = nextConfig;
