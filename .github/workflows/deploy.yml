@@ -1,0 +1,53 @@
+# Nome do seu fluxo de trabalho
+name: Deploy Next.js site to Pages
+
+# Roda este fluxo sempre que houver um push na branch 'main'
+on:
+  push:
+    branches: ["main"]
+  # Permite rodar manualmente pela aba Actions no GitHub
+  workflow_dispatch:
+
+# Define as permissões que o "robô" do GitHub terá
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Define o que acontece com a concorrência
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # Job de build
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+      - name: Install dependencies
+        run: npm install
+      - name: Build with Next.js
+        run: npm run build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+  # Job de deploy
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
