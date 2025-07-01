@@ -37,7 +37,7 @@ export default function Home() {
           <nav>
             <ul className="flex space-x-6 text-sm font-medium text-charcoal-text">
               <li><a href="#portfolio" className="hover:text-primary-green transition-colors">Portfólio</a></li>
-              <li><a href="#sobre" className="hover:text-primary-green transition-colors">O Estúdio</a></li>
+              <li><a href="#sobre" className="hover:text-primary-green transition-colors">Escritório</a></li>
               <li><a href="#servicos" className="hover:text-primary-green transition-colors">Serviços</a></li>
               <li><a href="#contato" className="hover:text-primary-green transition-colors">Contato</a></li>
             </ul>
@@ -77,8 +77,8 @@ export default function Home() {
               <Image src="/projeto-arq-mel/images/view12.jpg" alt="Interiores Apartamento M.N." width={600} height={400} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-6 text-white">
-                <h3 className="text-xl font-bold">Interiores Apto. M.N.</h3>
-                <p className="text-sm">Rio de Janeiro, RJ</p>
+                <h3 className="text-xl font-bold">Paisagismo no condomínio B.G.</h3>
+                <p className="text-sm">João Pessoa, PB</p>
               </div>
             </div>
             {/* Card de Projeto Exemplo 3 */}
@@ -87,7 +87,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-6 text-white">
                 <h3 className="text-xl font-bold">Loja Conceito</h3>
-                <p className="text-sm">Belo Horizonte, MG</p>
+                <p className="text-sm">Goiânia, GO</p>
               </div>
             </div>
           </div>
@@ -95,9 +95,9 @@ export default function Home() {
         
         {/* Seção Sobre / O Estúdio */}
         <section id="sobre" className="mb-24 bg-neutral-beige p-10 rounded-lg text-center">
-            <h2 className="text-3xl font-serif text-primary-green mb-4">O Estúdio</h2>
+            <h2 className="text-3xl font-serif text-primary-green mb-4">Escritório</h2>
             <p className="text-lg max-w-3xl mx-auto">
-                Fundado pela arquiteta Melissa Fujikura, o estúdio Arqmel nasceu da paixão por criar ambientes que contam histórias. Acreditamos em uma arquitetura atemporal, que valoriza a luz natural, os materiais genuínos e a conexão com a natureza, sempre com um olhar atento às necessidades e desejos de quem irá habitar o espaço.
+                Fundado pela arquiteta Melissa Fujikura, o escritório Arqmel nasceu da paixão por criar ambientes que contam histórias. Acreditamos em uma arquitetura atemporal, que valoriza a luz natural, os materiais genuínos e a conexão com a natureza, sempre com um olhar atento às necessidades e desejos de quem irá habitar o espaço.
             </p>
         </section>
 
@@ -105,18 +105,42 @@ export default function Home() {
         <section id="servicos" className="mb-24">
             <h2 className="text-3xl font-serif text-center text-primary-green mb-10">Nossos Serviços</h2>
             <div className="grid md:grid-cols-3 gap-8 text-center">
-                <div>
+                <div className="group relative overflow-hidden rounded-lg shadow-lg">
+                  <Image src="/projeto-arq-mel/images/Projetos-de-arquitetura.png" alt="Residência Vale Verde" width={600} height={400} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 p-6 text-white">
+                    <h3 className="text-xl font-bold">Projetos de Arquitetura</h3>
+                    <p className="text-sm">Desenvolvimento completo de projetos residenciais e comerciais, da concepção à execução.</p>
+                  </div>
+                </div>
+                {/* <div>
                     <h3 className="text-xl font-bold mb-2">Projetos de Arquitetura</h3>
                     <p>Desenvolvimento completo de projetos residenciais e comerciais, da concepção à execução.</p>
+                </div> */}
+                <div className="group relative overflow-hidden rounded-lg shadow-lg">
+                  <Image src="/projeto-arq-mel/images/Design-de-interiores.png" alt="Residência Vale Verde" width={600} height={400} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 p-6 text-white">
+                    <h3 className="text-xl font-bold">Design de Interiores</h3>
+                    <p className="text-sm">Criação de ambientes internos personalizados que combinam estética, conforto e funcionalidade.</p>
+                  </div>
                 </div>
-                <div>
+                {/* <div>
                     <h3 className="text-xl font-bold mb-2">Design de Interiores</h3>
                     <p>Criação de ambientes internos personalizados que combinam estética, conforto e funcionalidade.</p>
+                </div> */}
+                <div className="group relative overflow-hidden rounded-lg shadow-lg">
+                  <Image src="/projeto-arq-mel/images/Consultoria-de-arquitetura.png" alt="Residência Vale Verde" width={600} height={400} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 p-6 text-white">
+                    <h3 className="text-xl font-bold">Consultoria</h3>
+                    <p className="text-sm">Orientação especializada para reformas, escolha de acabamentos e otimização de layouts.</p>
+                  </div>
                 </div>
-                <div>
+                {/* <div>
                     <h3 className="text-xl font-bold mb-2">Consultoria</h3>
                     <p>Orientação especializada para reformas, escolha de acabamentos e otimização de layouts.</p>
-                </div>
+                </div> */}
             </div>
         </section>
 
