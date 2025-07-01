@@ -26,7 +26,7 @@ export default function Home() {
           {/* Bloco da Logo: A imagem dentro de um link para a página inicial */}
           <Link href="/" aria-label="Página inicial da Arqmel">
             <Image 
-              src="/images/arqmel-logo-transp.png" 
+              src="/projeto-arq-mel/images/arqmel-logo-transp.png" 
               alt="Logo Arqmel" 
               width={40} // Ajuste a largura conforme o design da sua logo
               height={40} // Ajuste a altura para manter a proporção
@@ -65,7 +65,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Card de Projeto Exemplo 1 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg">
-              <Image src="/images/view8.jpg" alt="Residência Vale Verde" width={600} height={400} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <Image src="/projeto-arq-mel/images/view8.jpg" alt="Residência Vale Verde" width={600} height={400} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-6 text-white">
                 <h3 className="text-xl font-bold">Residência Vale Verde</h3>
@@ -74,7 +74,7 @@ export default function Home() {
             </div>
             {/* Card de Projeto Exemplo 2 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg">
-              <Image src="/images/view12.jpg" alt="Interiores Apartamento M.N." width={600} height={400} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <Image src="/projeto-arq-mel/images/view12.jpg" alt="Interiores Apartamento M.N." width={600} height={400} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-6 text-white">
                 <h3 className="text-xl font-bold">Interiores Apto. M.N.</h3>
@@ -83,7 +83,7 @@ export default function Home() {
             </div>
             {/* Card de Projeto Exemplo 3 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg">
-              <Image src="/images/view4.jpg" alt="Loja Conceito" width={600} height={400} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <Image src="/projeto-arq-mel/images/view4.jpg" alt="Loja Conceito" width={600} height={400} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-6 text-white">
                 <h3 className="text-xl font-bold">Loja Conceito</h3>
