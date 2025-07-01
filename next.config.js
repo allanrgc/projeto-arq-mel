@@ -1,13 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-
-  output: 'export', 
-
+  output: 'export',
   images: {
     unoptimized: true,
   },
-
-  basePath: process.env.NODE_ENV === 'production' ? '/projeto-arq-mel' : '',
+  basePath: '/projeto-arq-mel',
 };
 
 module.exports = nextConfig;
