@@ -28,9 +28,9 @@ export default function Home() {
             <Image 
               src="/images/arqmel-logo-transp.png" 
               alt="Logo Arqmel" 
-              width={60} // Ajuste a largura conforme o design da sua logo
-              height={60} // Ajuste a altura para manter a proporção
-              className="h-15 w-auto" // Controla a altura e deixa a largura automática
+              width={40} // Ajuste a largura conforme o design da sua logo
+              height={40} // Ajuste a altura para manter a proporção
+              className="h-12 w-auto" // Controla a altura e deixa a largura automática
             />
           </Link>
           {/* Bloco da Navegação */}
